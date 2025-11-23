@@ -191,11 +191,38 @@ body {
 }
 
 @media (max-width: 480px) {
+    .header {
+        position: relative;
+    }
     .nav-toggle {
         display: block;
     }
     .nav-lista {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: var(--rojo);
+        padding: 20px;
+        list-style: none;
+        gap: 0;
+        z-index: 100;
+        transition: all 0.5s linear;
+    }
+    .nav-lista li {
+        padding: 5px 0;
+        border-bottom: 1px dotted var(--blanco);
+    }
+    .nav-lista a {
+        color: var(--blanco);
+    }
+    .nav-lista a:hover {
         display: none;
+    }
+    .nav-lista.abrir-menu {
+        left: 0;
+        transition: all 0.5s linear;
     }
     .slide-texto {
         background: rgba(255, 87, 87, 0.425);

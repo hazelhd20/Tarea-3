@@ -12,6 +12,6 @@ $("#icono-menu").click(function () {
     $("#nav-menu").toggleClass('abrir-menu');
 });
 
-$(".btn_ancla").click(function () {
+$(".btn-ancla").click(function () {
     $("#nav-menu").toggleClass('abrir-menu');
 });

@@ -31,7 +31,7 @@ body {
     padding: 15px 0;
     background: var(--gris);
 }
-.header-contenido {
+.header-contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ body {
     list-style: none;
     gap: 20px;
 }
-.nav-lista a {
+.nav-lista a { 
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--negro);
@@ -66,7 +66,7 @@ body {
     position: relative;
 }
 /* Css para el slider */
-.hero-contenido {
+.hero-contenedor {
     position: relative;
 }
 .rslides {
@@ -129,6 +129,27 @@ body {
     display: flex;
     align-items: center;
     z-index: 2;
+}
+
+/* Filtro oscuro para slides 2 y 3 */
+.rslides li:nth-child(2)::before,
+.rslides li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.rslides li:nth-child(2) .slide-overlay,
+.rslides li:nth-child(3) .slide-overlay {
+    z-index: 2;
+}
+
+/* Cambiar color del texto de descripción en slides 2 y 3 */
+.rslides li:nth-child(2) .slide-texto p,
+.rslides li:nth-child(3) .slide-texto p {
+    color: var(--blanco);
 }
 
 .slide-texto-contenedor {

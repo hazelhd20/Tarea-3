@@ -11,10 +11,10 @@
 
 <body>
     <!-- Encabezado principal con logo y navegación -->
-    <header class="header">
-        <div class="contenedor header-contenido">
+    <header id="header" class="header">
+        <div class="contenedor header-contenedor">
             <div class="header-logo">
-                <a href="#inicio" class="header-logo-enlace">
+                <a href="#inicio" class="header-logo">
                     <img src="imagenes/logo.png" alt="Logo Best Fitness">
                 </a>
             </div>
@@ -35,9 +35,8 @@
 
     <!-- Contenido principal -->
     <main>
-        <!-- Sección de inicio / hero con slider -->
         <section id="inicio" class="hero">
-            <div class="hero-contenido">
+            <div class="hero-contenedor">
                 <ul class="rslides">
                     <li>
                         <img src="imagenes/slide1.jpg" alt="slide 1">
@@ -80,9 +79,16 @@
             </div>
         </section>
 
-        <!-- Secciones a las que apunta el menú (estructura básica por ahora) -->
         <section id="servicios">
-            <!-- Contenido de servicios -->
+            <div class="contenedor">
+                <h2>SERVICES</h2>
+                <div class="servicios-contenedor">
+                    <div class="servicio">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>GYM</h3>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="galeria">

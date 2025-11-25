@@ -7,6 +7,8 @@
     <title>Tarea 3</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -24,10 +26,10 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul id="nav-menu" class="nav-lista">
-                    <li><a class="btn-ancla" href="#inicio">HOME</a></li>
+                    <li><a class="btn-ancla" href="#header">HOME</a></li>
                     <li><a class="btn-ancla" href="#servicios">SERVICES</a></li>
                     <li><a class="btn-ancla" href="#galeria">GALLERY</a></li>
-                    <li><a class="btn-ancla" href="#coaches">COACHES</a></li>
+                    <li><a class="btn-ancla" href="#">COACHES</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +37,7 @@
 
     <!-- Contenido principal -->
     <main>
-        <section id="inicio" class="hero">
+        <section id="hero" class="hero">
             <div class="hero-contenedor">
                 <ul class="rslides">
                     <li>
@@ -81,30 +83,30 @@
 
         <section id="servicios">
             <div class="contenedor">
-                <h2>SERVICES</h2>
+                <h2 class="wow animate__animated animate__fadeInDown" data-wow-duration="1s">SERVICES</h2>
                 <div class="servicios-contenedor">
-                    <article class="servicio">
+                    <article class="servicio wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                         <div class="servicio-icono">
                             <i class="fas fa-award"></i>
                         </div>
                         <h3>QUALITY SERVICE</h3>
                         <p>At our fitness studio, you can experience the best level of customer service.</p>
                     </article>
-                    <article class="servicio">
+                    <article class="servicio wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="servicio-icono">
                             <i class="fas fa-dumbbell"></i>
                         </div>
                         <h3>SPACIOUS GYM</h3>
                         <p>Our gym has enough place for all kinds of workouts and a wide variety of equipment.</p>
                     </article>
-                    <article class="servicio">
+                    <article class="servicio wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="servicio-icono">
                             <i class="fas fa-file-invoice"></i>
                         </div>
                         <h3>UNIQUE FITNESS PROGRAMS</h3>
                         <p>Our coaches have developed more than 50 fitness programs and workouts for you.</p>
                     </article>
-                    <article class="servicio">
+                    <article class="servicio wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
                         <div class="servicio-icono">
                             <i class="fas fa-users"></i>
                         </div>
@@ -116,13 +118,63 @@
         </section>
 
         <section id="galeria">
-            <!-- Contenido de galería -->
+            <div class="galeria-contenedor">
+                <div class="galeria-grid">
+                    <a href="imagenes/foto1.jpg" data-fancybox="gallery" data-caption="Mujeres en el gimnasio">
+                        <figure class="galeria-imagen">
+                            <img src="imagenes/foto1.jpg" alt="Mujeres en el gimnasio">
+                        </figure>
+                    </a>
+                    <a href="imagenes/foto3.jpg" data-fancybox="gallery" data-caption="Interior del gimnasio">
+                        <figure class="galeria-imagen">
+                            <img src="imagenes/foto3.jpg" alt="Interior del gimnasio">
+                        </figure>
+                    </a>
+                    <a href="imagenes/foto4.jpg" data-fancybox="gallery" data-caption="Mujer haciendo ejercicio">
+                        <figure class="galeria-imagen">
+                            <img src="imagenes/foto4.jpg" alt="Mujer haciendo ejercicio">
+                        </figure>
+                    </a>
+                    <a href="imagenes/foto2.jpg" data-fancybox="gallery" data-caption="Hombre en pista">
+                        <figure class="galeria-imagen">
+                            <img src="imagenes/foto2.jpg" alt="Hombre en pista">
+                        </figure>
+                    </a>
+                </div>
+                <div class="galeria-texto">
+                    <h2><span class="galeria-titulo-grande">GALLERY</span> FITNESS CLUB</h2>
+                    <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people from all walks of life achieve their individual health and fitness goals – no matter their shape, age, and experience.</p>
+                    <a href="#contacto" class="btn btn-primary">JOIN NOW</a>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="contenedor footer-contenedor">
+           <div class="footer-texto">
+            <p>© 2020 Profit. Privacy Policy.</p>
+           </div>
+           <div class="footer-redes">
+            <a href="#" class="footer-redes-icono">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-redes-icono">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-redes-icono">
+                <i class="fab fa-youtube"></i>
+            </a>
+           </div>
+        </div>
+    </footer>
+    
 
     <!-- Scripts al final del body -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 

@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(function () {
     $(".rslides").responsiveSlides({
         auto: true,
@@ -14,4 +16,8 @@ $("#icono-menu").click(function () {
 
 $(".btn-ancla").click(function () {
     $("#nav-menu").toggleClass('abrir-menu');
+});
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options for a specific gallery
 });

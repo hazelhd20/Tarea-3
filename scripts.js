@@ -4,8 +4,23 @@ $(function () {
     $(".rslides").responsiveSlides({
         auto: true,
         nav: true,
-        prevText: "‹",
-        nextText: "›"
+        prevText: "\u2039",
+        nextText: "\u203A"
+    });
+
+    const $btnSubir = $("#btn-subir");
+
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 300) {
+            $btnSubir.addClass("mostrar");
+        } else {
+            $btnSubir.removeClass("mostrar");
+        }
+    });
+
+    $btnSubir.on("click", function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 600);
     });
 });
 
